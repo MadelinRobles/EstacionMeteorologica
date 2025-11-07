@@ -239,7 +239,7 @@
         document.getElementById("air").innerText = !isNaN(air) ? air : "--";
         document.getElementById("lum").innerText = !isNaN(lum) ? lum : "--";
         document.getElementById("lum").innerText += !isNaN(lum) ? ` (${interpretarLuz(lum)})` : "";
-        document.getElementById("lluvia").innerText += !isNaN(lum) ? ` (${interpretarLluvia(lluvia)})` : "";
+        document.getElementById("lluvia").innerText += !isNaN(lluvia) ? ` (${interpretarLluvia(lluvia)})` : "";
         document.getElementById("pres").innerText = !isNaN(pres) ? pres + " hPa" : "--";
         document.getElementById("fecha-pres").innerText = fechaLocal;
 
@@ -320,5 +320,6 @@
     setInterval(actualizarDatos, 30000);
   </script>
 </body>
+
 
 </html>
